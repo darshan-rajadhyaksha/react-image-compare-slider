@@ -1,9 +1,9 @@
 # @neui/react-image-compare-slider
 React component to show before-and-after image comparisons with a draggable slider.
 
-![Example Image](https://picsum.photos/id/65/800/450)
+![Demo](./assets/demo.gif)
 
-[Open in CodeSandbox](https://codesandbox.io/)
+[Open in CodeSandbox](https://codesandbox.io/p/sandbox/neui-react-image-compare-slider-demo-czd2rc)
 
 ## Featues
 - Keyboard accessible
@@ -17,7 +17,7 @@ React component to show before-and-after image comparisons with a draggable slid
 npm install @neui/react-image-compare-slider
 ```
 
-or
+**Using yarn**
 
 ```bash
 yarn add @neui/react-image-compare-slider
@@ -40,7 +40,7 @@ import ImageCompareSlider from "@neui/react-image-compare-slider";
 />
 ```
 
-# Props
+## Props
 
 | Prop             | Required | Default Value | Description                                                                                       |
 |-----------------|----------|---------------|---------------------------------------------------------------------------------------------------|

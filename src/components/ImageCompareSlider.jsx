@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import React, { memo, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import "./style.scss";
 
 const ImageCompareSlider = (props) => {
@@ -39,7 +39,7 @@ const ImageCompareSlider = (props) => {
 		return () => {
 			resizeObserver.disconnect();
 		};
-	}, [beforeImage, afterImage]);
+	}, [beforeImage?.src, afterImage?.src]);
 
 	const beforeImageClipWidth = useMemo(() => {
 		const { width } = imageDimensions;
@@ -110,4 +110,4 @@ const ImageCompareSlider = (props) => {
 	);
 };
 
-export default ImageCompareSlider;
+export default memo(ImageCompareSlider);

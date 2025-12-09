@@ -1,13 +1,22 @@
 import ReactDOM from "react-dom/client";
 import ImageCompareSlider from "../src";
 
-function App() {
+const App = () => {
   return (
     <div>
       <ImageCompareSlider 
-        beforeImage="https://picsum.photos/id/65/800/450?grayscale"
-        afterImage="https://picsum.photos/id/65/800/450"
+        beforeImage={{
+          src: "https://picsum.photos/id/65/800/450?grayscale",
+          alt: "Before image"
+        }}
+        afterImage={{
+          src: "https://picsum.photos/id/65/800/450",
+          alt: "After image"
+        }}
         defaultPercentage={20}
+        sliderStyles={{
+          size: 10
+        }}
       />
     </div>
   )
