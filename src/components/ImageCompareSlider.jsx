@@ -1,4 +1,5 @@
 import React, { memo, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import "./style.css";
 
 const ImageCompareSlider = (props) => {
 	const {
