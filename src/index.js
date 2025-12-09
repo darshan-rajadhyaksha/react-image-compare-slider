@@ -1,1 +1,2 @@
-export { default as ImageCompareSlider } from './components/ImageCompareSlider';
+import ImageCompareSlider from "./components/ImageCompareSlider";
+export default ImageCompareSlider;
