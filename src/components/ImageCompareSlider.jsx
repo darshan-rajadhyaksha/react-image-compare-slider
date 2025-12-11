@@ -95,8 +95,10 @@ const ImageCompareSlider = (props) => {
 				className="after-image"
 				src={afterImage.src}
 				alt={afterImage.alt || ""}
-				width={imageWidth}
-				height={imageHeight}
+				style={{
+					width: imageWidth,
+					height: imageHeight,
+				}}
 			/>
 			<input
 				type="range"

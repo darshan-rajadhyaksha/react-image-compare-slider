@@ -47,6 +47,19 @@ it('should set default slider percentage', () => {
 	expect(+(slider.value)).toBe(props.defaultPercentage);
 });
 
+it('should set width and height of image', () => {
+	const props = getMockProps({ 
+		imageWidth: "200px",
+		imageHeight: "100px",
+	 });
+	render(<ImageCompareSlider {...props} />);
+	const afterImage = screen.getByRole("img", { name: props.afterImage.alt });
+	expect(afterImage).toBeInTheDocument();
+	expect(afterImage).toBeVisible();
+	expect(afterImage.style.width).toBe(props.imageWidth);
+	expect(afterImage.style.height).toBe(props.imageHeight);
+});
+
 it('should call onSliderChange handler when slider is changed', async () => {
 	const props = getMockProps({
 		defaultPercentage: 20,
