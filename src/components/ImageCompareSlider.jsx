@@ -1,4 +1,5 @@
 import React, { memo, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import areEqualFn from "./areEqualFn";
 import "./style.css";
 
 const ImageCompareSlider = (props) => {
@@ -112,4 +113,4 @@ const ImageCompareSlider = (props) => {
 	);
 };
 
-export default memo(ImageCompareSlider);
+export default memo(ImageCompareSlider, areEqualFn);
